@@ -18,7 +18,8 @@ public partial class MainPage : ContentPage
 
     private void OnSquareRoot(object sender, EventArgs e)
     {
-
+        double sqrt = Math.Sqrt(double.Parse(result.Text));
+        result.Text = sqrt.ToString();
     }
     private void OnNumberSelection(object sender, EventArgs e)
     {
