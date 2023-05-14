@@ -7,12 +7,12 @@
 
     <Grid>
         <Grid.RowDefinitions >
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="*"/>
@@ -32,7 +32,6 @@
             Text="0"
             TextColor="Orange"
             VerticalOptions="Center"    
-            
         />
         <Button 
             Margin="2"
@@ -40,7 +39,7 @@
             Grid.Column="2"
             BackgroundColor="LightGray"
             BorderColor="Black"
-            Clicked="OnClear"
+            Clicked="OnPercentage"
             CornerRadius="4"
             FontSize="0"
             Text="%"
@@ -225,7 +224,7 @@
             FontSize="0"
             Text="-"
             />
-        <Button 
+        <Button
             Margin="2"  
             Grid.Row="5"
             Grid.Column="3"

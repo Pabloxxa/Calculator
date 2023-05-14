@@ -15,7 +15,12 @@ public partial class MainPage : ContentPage
     {
         result.Text = "0";
     }
-
+     void OnPercentage(object sender, EventArgs e)
+    {
+        double _result = 0;    
+        _result =( firstNum * secondNum)/100;
+        result.Text = _result.ToString();
+    }
     private void OnSquareRoot(object sender, EventArgs e)
     {
         double sqrt = Math.Sqrt(double.Parse(result.Text));
