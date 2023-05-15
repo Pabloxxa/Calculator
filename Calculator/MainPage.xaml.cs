@@ -13,12 +13,13 @@ public partial class MainPage : ContentPage
 
     private void OnClear(object sender, EventArgs e)
     {
+        currentState = 1;
         result.Text = "0";
     }
-     void OnPercentage(object sender, EventArgs e)
+    void OnPercentage(object sender, EventArgs e)
     {
-        double _result = 0;    
-        _result =( firstNum * secondNum)/100;
+        double _result = 0;
+        _result = (firstNum * secondNum) / 100;
         result.Text = _result.ToString();
     }
     private void OnSquareRoot(object sender, EventArgs e)
@@ -43,10 +44,16 @@ public partial class MainPage : ContentPage
             }
         }
 
+        SetOperandNumbers();
+    }
+
+    private void SetOperandNumbers()
+    {
         double number;
         if (double.TryParse(result.Text, out number))
         {
-            this.result.Text = number.ToString("N0");
+            //this.result.Text = number.ToString("N0");
+            this.result.Text = number.ToString();
             if (currentState == 1)
             {
                 firstNum = number;
@@ -104,4 +111,17 @@ public partial class MainPage : ContentPage
 
     //	SemanticScreenReader.Announce(CounterBtn.Text);
     //}
+    void OnChangeSign(object o, EventArgs e)
+    {
+        double _result = (-1) * double.Parse(result.Text);
+        result.Text = _result.ToString();
+    }
+    void OnSetDecimalPoint(object o, EventArgs e)
+    {
+        if (!result.Text.Contains(','))
+        {
+            result.Text += ',';
+        }
+
+    }
 }

@@ -3,16 +3,16 @@
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculator.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}">
+             BackgroundColor="AliceBlue">
 
     <Grid>
         <Grid.RowDefinitions >
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="48"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="52"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="*"/>
@@ -26,214 +26,255 @@
             Grid.ColumnSpan="4"
             BackgroundColor="White"
             FontAttributes="Bold"
-            FontSize="48"
+            FontSize="44"
             HorizontalTextAlignment="End"
             LineBreakMode="NoWrap"
             Text="0"
-            TextColor="Orange"
-            VerticalOptions="Center"    
+            TextColor="Black"
+            VerticalOptions="Center"  
+            LineHeight="200"
         />
         <Button 
             Margin="2"
             Grid.Row="1"
             Grid.Column="2"
-            BackgroundColor="LightGray"
-            BorderColor="Black"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnPercentage"
             CornerRadius="4"
             FontSize="0"
             Text="%"
+            TextColor="Black"
             />
         <Button 
             Margin="2"
             Grid.Row="1"
             Grid.Column="1"
-            BackgroundColor="LightGray"
-            BorderColor="Black"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnSquareRoot"
             CornerRadius="4"
             FontSize="0"
             Text="√"
+            TextColor="Black"
             />
         <Button 
             Margin="2"
             Grid.Row="1"
             Grid.Column="0"
-            BackgroundColor="LightGray"
-            BorderColor="Black"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnClear"
             CornerRadius="4"
             FontSize="0"
             Text="CE"
+            TextColor="Black"
             />
-       
         <Button 
             Margin="2"
             Grid.Row="2"
             Grid.Column="2"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="9"
+            TextColor="Black"
             />
         <Button 
             Margin="2"
             Grid.Row="2"
             Grid.Column="1"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="8"
+            TextColor="Black"
             />
         <Button 
             Margin="2"            
             Grid.Row="2"
             Grid.Column="0"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="7"                      
-
+            TextColor="Black"
             />
         <Button 
             Margin="2"  
             Grid.Row="3"
             Grid.Column="2"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="6"
+            TextColor="Black"
             />
         <Button 
             Margin="2"  
             Grid.Row="3"
             Grid.Column="1"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="5"
+            TextColor="Black"
             />
         <Button 
             Margin="2"  
             Grid.Row="3"
             Grid.Column="0"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="4"
+            TextColor="Black"
             />
         <Button 
             Margin="2"  
             Grid.Row="4"
             Grid.Column="2"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="3"
+            TextColor="Black"
             />
         <Button
             Margin="2"  
             Grid.Row="4"
             Grid.Column="1"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="2"
+            TextColor="Black"
             />
         <Button
             Margin="2"  
             Grid.Row="4"
             Grid.Column="0"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="1"
+            TextColor="Black"
+            />
+        <Button 
+            Margin="2"  
+            Grid.Row="5"
+            Grid.Column="0"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
+            Clicked="OnChangeSign"
+            CornerRadius="4"
+            FontSize="0"
+            Text="+/-"
+            TextColor="Black"
             />
         <Button 
             Margin="2"  
             Grid.Row="5"
             Grid.Column="1"
-            BackgroundColor="LightGray"
-            BorderColor="SlateGrey"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
             Clicked="OnNumberSelection"
             CornerRadius="4"
             FontSize="0"
             Text="0"
+            TextColor="Black"
             />
-        
+        <Button 
+            Margin="2"  
+            Grid.Row="5"
+            Grid.Column="2"
+            BackgroundColor="White"
+            BorderColor="LightBlue"
+            Clicked="OnSetDecimalPoint"
+            CornerRadius="4"
+            FontSize="0"
+            Text=","
+            TextColor="Black"
+            />
+
         <!--Operators-->
         <Button 
             Margin="2"
             Grid.Row="1"
             Grid.Column="3"
-            BackgroundColor="Grey"
-            BorderColor="SlateGrey"
+            BackgroundColor="AliceBlue"
+            BorderColor="LightBlue"
             Clicked="OnOperatorSelection"
             CornerRadius="4"
-            FontSize="0"
+            FontSize="20"
             Text="/"
+            TextColor="Black"
             />
         <Button 
             Margin="2"  
             Grid.Row="2"
             Grid.Column="3"
-            BackgroundColor="Grey"
-            BorderColor="SlateGrey"
+            BackgroundColor="AliceBlue"
+            BorderColor="LightBlue"
             Clicked="OnOperatorSelection"
             CornerRadius="4"
-            FontSize="0"
+            FontSize="20"
             Text="*"
+            TextColor="Black"
             />
         <Button
             Margin="2"  
             Grid.Row="3"
             Grid.Column="3"
-            BackgroundColor="Grey"
-            BorderColor="SlateGrey"
+            BackgroundColor="AliceBlue"
+            BorderColor="LightBlue"
             Clicked="OnOperatorSelection"
             CornerRadius="4"
-            FontSize="0"
+            FontSize="20"
             Text="+"
+            TextColor="Black"
             />
         <Button
             Margin="4"  
             Grid.Row="4"
             Grid.Column="3"
-            BackgroundColor="Grey"
-            BorderColor="SlateGrey"
+            BackgroundColor="AliceBlue"
+            BorderColor="LightBlue"
             Clicked="OnOperatorSelection"
             CornerRadius="4"
-            FontSize="0"
+            FontSize="20"
             Text="-"
+            TextColor="Black"
             />
         <Button
             Margin="2"  
             Grid.Row="5"
             Grid.Column="3"
-            BackgroundColor="Grey"
-            BorderColor="SlateGrey"
+            BackgroundColor="Blue"
+            BorderColor="LightBlue"
             Clicked="OnCalculate"
             CornerRadius="4"
-            FontSize="0"
+            FontSize="25"
             Text="="
+            TextColor="White"
             />
     </Grid>
 </ContentPage>
