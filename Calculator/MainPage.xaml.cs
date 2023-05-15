@@ -52,7 +52,6 @@ public partial class MainPage : ContentPage
         double number;
         if (double.TryParse(result.Text, out number))
         {
-            //this.result.Text = number.ToString("N0");
             this.result.Text = number.ToString();
             if (currentState == 1)
             {
@@ -67,7 +66,6 @@ public partial class MainPage : ContentPage
 
     void OnOperatorSelection(object sender, EventArgs e)
     {
-        //currentState = -2;
         currentState = currentState * (-1);
         result.Text = string.Empty;
 
@@ -100,17 +98,6 @@ public partial class MainPage : ContentPage
         currentState = (currentState * (-1));
         firstNum = _result;
     }
-    //private void OnCounterClicked(object sender, EventArgs e)
-    //{
-    //	count++;
-
-    //	if (count == 1)
-    //		CounterBtn.Text = $"Clicked {count} time";
-    //	else
-    //		CounterBtn.Text = $"Clicked {count} times";
-
-    //	SemanticScreenReader.Announce(CounterBtn.Text);
-    //}
     void OnChangeSign(object o, EventArgs e)
     {
         double _result = (-1) * double.Parse(result.Text);

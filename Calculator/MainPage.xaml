@@ -8,6 +8,7 @@
     <Grid>
         <Grid.RowDefinitions >
             <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="52"/>
             <RowDefinition Height="52"/>
             <RowDefinition Height="52"/>
@@ -21,8 +22,23 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label  
-            x:Name="result"
+            x:Name="resultUp"
             Grid.Row="0"
+            Grid.ColumnSpan="4"
+            BackgroundColor="White"
+            FontAttributes="Bold"
+            FontSize="12"
+            HorizontalTextAlignment="End"
+            LineBreakMode="NoWrap"
+            Text="0"
+            TextColor="Gray"
+            VerticalOptions="Center"  
+            LineHeight="0"
+            Padding="0"
+        />
+        <Label  
+            x:Name="result"
+            Grid.Row="1"
             Grid.ColumnSpan="4"
             BackgroundColor="White"
             FontAttributes="Bold"
@@ -32,11 +48,11 @@
             Text="0"
             TextColor="Black"
             VerticalOptions="Center"  
-            LineHeight="200"
+            LineHeight="0"
         />
         <Button 
             Margin="2"
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="2"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -48,7 +64,7 @@
             />
         <Button 
             Margin="2"
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="1"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -60,7 +76,7 @@
             />
         <Button 
             Margin="2"
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="0"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -72,7 +88,7 @@
             />
         <Button 
             Margin="2"
-            Grid.Row="2"
+            Grid.Row="3"
             Grid.Column="2"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -84,7 +100,7 @@
             />
         <Button 
             Margin="2"
-            Grid.Row="2"
+            Grid.Row="3"
             Grid.Column="1"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -96,7 +112,7 @@
             />
         <Button 
             Margin="2"            
-            Grid.Row="2"
+            Grid.Row="3"
             Grid.Column="0"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -108,7 +124,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="2"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -120,7 +136,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="1"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -132,7 +148,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="0"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -144,7 +160,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="2"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -156,7 +172,7 @@
             />
         <Button
             Margin="2"  
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="1"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -168,7 +184,7 @@
             />
         <Button
             Margin="2"  
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="0"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -180,7 +196,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="5"
+            Grid.Row="6"
             Grid.Column="0"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -192,7 +208,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="5"
+            Grid.Row="6"
             Grid.Column="1"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -204,7 +220,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="5"
+            Grid.Row="6"
             Grid.Column="2"
             BackgroundColor="White"
             BorderColor="LightBlue"
@@ -218,7 +234,7 @@
         <!--Operators-->
         <Button 
             Margin="2"
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="3"
             BackgroundColor="AliceBlue"
             BorderColor="LightBlue"
@@ -230,7 +246,7 @@
             />
         <Button 
             Margin="2"  
-            Grid.Row="2"
+            Grid.Row="3"
             Grid.Column="3"
             BackgroundColor="AliceBlue"
             BorderColor="LightBlue"
@@ -242,7 +258,7 @@
             />
         <Button
             Margin="2"  
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="3"
             BackgroundColor="AliceBlue"
             BorderColor="LightBlue"
@@ -254,7 +270,7 @@
             />
         <Button
             Margin="4"  
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="3"
             BackgroundColor="AliceBlue"
             BorderColor="LightBlue"
@@ -266,7 +282,7 @@
             />
         <Button
             Margin="2"  
-            Grid.Row="5"
+            Grid.Row="6"
             Grid.Column="3"
             BackgroundColor="Blue"
             BorderColor="LightBlue"
