@@ -78,13 +78,11 @@
             Margin="2"
             Grid.Row="2"
             Grid.Column="0"
-            BackgroundColor="White"
-            BorderColor="LightBlue"
+            BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"
             Clicked="OnClear"
             CornerRadius="4"
             FontSize="0"
             Text="CE"
-            TextColor="Black"
             />
         <Button 
             Margin="2"

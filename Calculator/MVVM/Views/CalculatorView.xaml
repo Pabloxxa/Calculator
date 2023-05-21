@@ -1,0 +1,68 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Calculator.MVVM.ViewModels"
+             x:Class="Calculator.MVVM.Views.CalculatorView">
+
+    <ContentPage.BindingContext>
+        <viewmodels:CalculatorViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Label Text="{Binding DisplayText}" FontSize="24" FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+               Margin="0" HeightRequest="30" />
+        
+        <Grid VerticalOptions="EndAndExpand" Margin="4" BackgroundColor="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                
+            </Grid.ColumnDefinitions>
+
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="0" Text="√" FontAttributes="Bold" Command="{Binding SqrtCommand}" CommandParameter="0" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="1" Text="³√" FontAttributes="Bold" Command="{Binding CubeSqrtCommand}" CommandParameter="0" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="2" Text="²	" FontAttributes="Bold" Command="{Binding SquarePowerCommand}" CommandParameter="0" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="3" Text="³" FontAttributes="Bold" Command="{Binding CubePowerCommand}" CommandParameter="0" Margin="5" />
+            
+            <!--<Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="1" Text="DC" Command="{Binding ClearCommand}" CommandParameter="C" Margin="5" />-->
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="0" Text="-/+" Command="{Binding NegateCommand}" CommandParameter="-" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="1" Text="0" Command="{Binding NumberCommand}" CommandParameter="0" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="2" Text="." Command="{Binding OperatorCommand}" CommandParameter="." Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="3" Text="=" FontAttributes="Bold" Command="{Binding EqualCommand}" Margin="5" />
+           
+            
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="3" Grid.Column="0" Text="1" Command="{Binding NumberCommand}" CommandParameter="1" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="3" Grid.Column="1" Text="2" Command="{Binding NumberCommand}" CommandParameter="2" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="3" Grid.Column="2" Text="3" Command="{Binding NumberCommand}" CommandParameter="3" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="3" Grid.Column="3" Text="+" FontAttributes="Bold" Command="{Binding OperatorCommand}" CommandParameter="+" Margin="5" />
+
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="2" Grid.Column="0" Text="4" Command="{Binding NumberCommand}" CommandParameter="4" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="2" Grid.Column="1" Text="5" Command="{Binding NumberCommand}" CommandParameter="5" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="2" Grid.Column="2" Text="6" Command="{Binding NumberCommand}" CommandParameter="6" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="2" Grid.Column="3" Text="-" FontAttributes="Bold" Command="{Binding OperatorCommand}" CommandParameter="-" Margin="5" />
+
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="1" Grid.Column="0" Text="7" Command="{Binding NumberCommand}" CommandParameter="7" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="1" Grid.Column="1" Text="8" Command="{Binding NumberCommand}" CommandParameter="8" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="1" Grid.Column="2" Text="9" Command="{Binding NumberCommand}" CommandParameter="9" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="1" Grid.Column="3" Text="*" FontAttributes="Bold" Command="{Binding OperatorCommand}" CommandParameter="*" Margin="5" />
+
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="0" Grid.Column="0" Text="%" FontAttributes="Bold" Command="{Binding PercentageCommand}" CommandParameter="%" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="0" Grid.Column="1" Text="←" FontAttributes="Bold" Command="{Binding BackspaceCommand}" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="0" Grid.Column="2" Text="C" FontAttributes="Bold" Command="{Binding ClearCommand}" CommandParameter="C" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="0" Grid.Column="3" Text="/" FontAttributes="Bold" Command="{Binding OperatorCommand}" CommandParameter="/" Margin="5" />
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
+
