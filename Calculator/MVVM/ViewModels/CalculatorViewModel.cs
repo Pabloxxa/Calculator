@@ -30,6 +30,7 @@ namespace Calculator.MVVM.ViewModels
         public ICommand PercentageCommand { get; }
         public ICommand SqrtCommand { get; }
         public ICommand CubeSqrtCommand { get; }
+        public ICommand SquarePowerCommand { get; }
         public ICommand NegateCommand { get; }
 
         public CalculatorViewModel()
@@ -43,7 +44,21 @@ namespace Calculator.MVVM.ViewModels
             PercentageCommand = new Command(CalculatePercentage);
             SqrtCommand = new Command(CalculateSqrt);
             CubeSqrtCommand = new Command(CalculateCubeSqrt);
+            SquarePowerCommand = new Command(CalculateSquarePower);
             NegateCommand = new Command(NegateNumber);
+        }
+
+        private void CalculateSquarePower(object obj)
+        {
+            if (DisplayText != null)
+            {
+                string num = DisplayText;
+
+                if (num != "" || num != null)
+                {
+                    DisplayText = Math.Pow(Convert.ToDouble(num),2).ToString();
+                }
+            }
         }
 
         private void CalculateCubeSqrt(object obj)

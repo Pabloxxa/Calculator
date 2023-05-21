@@ -32,8 +32,8 @@
 
             <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="0" Text="√" FontAttributes="Bold" Command="{Binding SqrtCommand}" CommandParameter="0" Margin="5" />
             <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="1" Text="³√" FontAttributes="Bold" Command="{Binding CubeSqrtCommand}" CommandParameter="0" Margin="5" />
-            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="2" Text="²	" FontAttributes="Bold" Command="{Binding SquarePowerCommand}" CommandParameter="0" Margin="5" />
-            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="3" Text="³" FontAttributes="Bold" Command="{Binding CubePowerCommand}" CommandParameter="0" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="2" Text="x²	" FontAttributes="Bold" Command="{Binding SquarePowerCommand}" CommandParameter="0" Margin="5" />
+            <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black"  Grid.Row="5" Grid.Column="3" Text="x³" FontAttributes="Bold" Command="{Binding CubePowerCommand}" CommandParameter="0" Margin="5" />
             
             <!--<Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="1" Text="DC" Command="{Binding ClearCommand}" CommandParameter="C" Margin="5" />-->
             <Button BackgroundColor="White" BorderColor="LightBlue" TextColor="Black" Grid.Row="4" Grid.Column="0" Text="-/+" Command="{Binding NegateCommand}" CommandParameter="-" Margin="5" />
